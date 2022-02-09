@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileImage.Views.LoginPage"
+             xmlns:local="clr-namespace:MobileImage.ViewModels"
+              NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.BindingContext>
+        <local:LoginViewModels/>
+    </ContentPage.BindingContext>
+
+    <StackLayout BackgroundColor="#e6e6e6">
+        <Grid>
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                <Frame  Padding="0" Margin="0">
+                    <Image Source="{local:ImagesViewModel MobileImage.Image.bg.png}" Aspect="Fill"/>
+                </Frame>
+            </StackLayout>
+            
+            <StackLayout>   
+                <StackLayout Margin="0">
+                    <Image Source="{local:ImagesViewModel MobileImage.Image.ImageShot.png}"/>
+                </StackLayout>
+                
+                <StackLayout Padding="0" Margin="15,70">
+
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,-5,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="White" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Entry Placeholder="Email" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" Text="{Binding MyLogin.Email}"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Entry Placeholder="Password" IsPassword="True" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" Text="{Binding MyLogin.Password}"/>
+                        </StackLayout>
+
+                    </Frame>
+
+                    <Label TextColor="red" Margin="10,5,0,0" Padding="0" Text="{Binding Result}"></Label>
+
+                    <StackLayout  Orientation="Horizontal">
+                        <CheckBox IsChecked="False" Color="#F0AE4B" />
+                        <Label Text="จดจำฉัน" TextColor="DarkGray" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+                        <Label Text="ลืมรหัสผ่านใช่ไหม?" TextColor="#F0AE4B" FontAttributes="Bold" HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+
+                    </StackLayout>
+
+                    <Button Text="เข้าสู่ระบบ" BackgroundColor="Black" TextColor="White" CornerRadius="30" Command="{Binding LoginCommand}" />
+
+                    <StackLayout Margin="0,10,0,10" Padding="0">
+                        <Grid>
+                            <BoxView BackgroundColor="DarkGray" HeightRequest="1" WidthRequest="150"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Frame BackgroundColor="White" HeightRequest="45" WidthRequest="45" CornerRadius="45" HasShadow="False" BorderColor="DarkGray" Margin="0" HorizontalOptions="Center" Padding="0">
+                                <Label Text="OR" TextColor="DarkGray" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                            </Frame>
+                        </Grid>
+                    </StackLayout>
+
+                    <Button Text="สมัครสมาชิก" BackgroundColor="#d73c3c" TextColor="White" CornerRadius="30" Command="{Binding RegisterCommand}" />
+
+                </StackLayout>
+
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

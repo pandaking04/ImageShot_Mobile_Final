@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileImage.Views.RegisterView"
+             xmlns:local="clr-namespace:MobileImage.ViewModels"
+              NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.BindingContext>
+        <local:RegisterViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout BackgroundColor="#e6e6e6">
+        <Grid>
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                <Frame  Padding="0" Margin="0">
+                    <Image Source="{local:ImagesViewModel MobileImage.Image.bg.png}" Aspect="Fill"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout>
+
+                <StackLayout Margin="0,-50">
+                    <Image Source="{local:ImagesViewModel MobileImage.Image.ImageShot.png}"/>
+                </StackLayout>
+
+                <StackLayout Padding="0" Margin="15,100">
+
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,30,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="White" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Entry Placeholder="ชื่อผู้ใช้" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" Text="{Binding Register.UserName}"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Entry Placeholder="อีเมล์" IsPassword="True" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" Text="{Binding Register.Email}"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Entry Placeholder="รหัสผ่าน" IsPassword="True" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" Text="{Binding Register.Password}"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Entry Placeholder="ยืนยันรหัสผ่าน" IsPassword="True" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" Text="{Binding Register.ConfirmPassword}"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Button Text="สมัครสมาชิก" BackgroundColor="Black" TextColor="White" CornerRadius="30" Margin="0,15" Command="{Binding RegisterCommand}" />
+                    <Button Text="ย้อนกลับ" BackgroundColor="#d73c3c" TextColor="White" CornerRadius="30" Margin="0,-15" Command="{Binding BackCommand}"  />
+                </StackLayout>
+
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
