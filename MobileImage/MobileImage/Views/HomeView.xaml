@@ -8,41 +8,42 @@
         <local:HomeViewModel/>
     </ContentPage.BindingContext>
 
-    <CollectionView ItemsSource="{Binding MyListProduct}" SelectionMode="Single"
+
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar x:Name="Search1" Placeholder="Search" TextChanged="Search1_TextChanged"/>
+            <CollectionView x:Name="Coill" ItemsSource="{Binding MyListProduct}" SelectionMode="Single"
                     SelectedItem="{Binding SelectedProduct}" SelectionChangedCommand="{Binding SelectCommand}">
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Grid Padding="10">
-                    
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
-                    <!--<SearchBar x:Name="Search1" Placeholder="Search" CancelButtonColor="Orange" PlaceholderColor="Red"
-                                   HorizontalTextAlignment="Center"
-                                   TextChanged="Search1_TextChanged"></SearchBar>-->
-                    
-                    <Image Grid.RowSpan="2"
-                        Source="{Binding Url}"
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.RowSpan="2"
+                        Source="{Binding url}"
                         Aspect="AspectFill"
-                        HeightRequest="60"
-                        WidthRequest="60" />
-                    <Label Grid.Column="1"
+                        HeightRequest="80"
+                        WidthRequest="80" />
+                            <Label Grid.Column="1"
                         Text="{Binding Name}"
                         FontAttributes="Bold" />
-                    <Label Grid.Row="1"
+                            <Label Grid.Row="1"
                         Grid.Column="1"
                         Text="{Binding Price}"
                         FontAttributes="Italic"
-                        VerticalOptions="End"  />
+                        VerticalOptions="End"
+                        TextColor="Red"/>
 
-                </Grid>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
-
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

@@ -4,6 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "MobileImage.Android.dll" comes first in this list. */
 		"MobileImage.Android.dll",
 		"FormsViewGroup.dll",
+		"ImageCircle.Forms.Plugin.dll",
 		"MobileImage.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",

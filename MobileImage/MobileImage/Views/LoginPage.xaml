@@ -13,16 +13,16 @@
         <Grid>
             <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
                 <Frame  Padding="0" Margin="0">
-                    <Image Source="{local:ImagesViewModel MobileImage.Image.bg.png}" Aspect="Fill"/>
+                    <Image Source="i.jpg" Aspect="AspectFill" />
                 </Frame>
             </StackLayout>
             
             <StackLayout>   
                 <StackLayout Margin="0">
-                    <Image Source="{local:ImagesViewModel MobileImage.Image.ImageShot.png}"/>
+                    <Image Source="ImageShot.png"  HeightRequest="300" Aspect="AspectFill"/>
                 </StackLayout>
                 
-                <StackLayout Padding="0" Margin="15,70">
+                <StackLayout Padding="0" Margin="15,-40">
 
                     <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,-5,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                         <StackLayout Orientation="Horizontal">
@@ -37,7 +37,7 @@
                     <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                         <StackLayout Orientation="Horizontal">
                             <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
-                                <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/3064/3064211.png" Aspect="AspectFill" Margin="0"/>
                             </Frame>
 
                             <Entry Placeholder="Password" IsPassword="True" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" Text="{Binding MyLogin.Password}"/>
@@ -51,7 +51,7 @@
                         <CheckBox IsChecked="False" Color="#F0AE4B" />
                         <Label Text="จดจำฉัน" TextColor="DarkGray" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
 
-                        <Label Text="ลืมรหัสผ่านใช่ไหม?" TextColor="#F0AE4B" FontAttributes="Bold" HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                        <Label Text="ลืมรหัสผ่านใช่ไหม?" TextColor="DarkGray" FontAttributes="Bold" HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
 
 
                     </StackLayout>

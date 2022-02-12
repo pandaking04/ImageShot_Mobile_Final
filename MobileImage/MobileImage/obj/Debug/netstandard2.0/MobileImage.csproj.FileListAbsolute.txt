@@ -21,3 +21,4 @@ D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\Reg
 D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\HomeView.xaml.g.cs
 D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\ProductDetailsView.xaml.g.cs
 D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\MobileImage.csproj.AssemblyReference.cache
+D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs

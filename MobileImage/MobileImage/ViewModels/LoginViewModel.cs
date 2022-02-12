@@ -32,7 +32,7 @@ class LoginViewModels : INotifyPropertyChanged
     public LoginViewModels()
     {
         MyLogin = new Login();
-        LoginCommand = new Command(async () =>
+        LoginCommand = new Command(() =>
         {
             if (MyLogin.Email == "s@s.com" && MyLogin.Password == "1234")
             {

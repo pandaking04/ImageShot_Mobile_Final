@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "aGTAyT5YZjbxg15uHZu/DQ7reEPrkOwW+b+UxuaoIy3kmlxxrxuzy1BHtepIWV5uDPwi8D6CD8MS1Ta04Jsifg==",
+  "dgSpecHash": "Gf3LOUe8xKO0zdLH3PjH+O6Ra8VkCoPVl+f9m/kZt/DSSibROOnhKwK5XiZTCobRH5nnIGuwKln149Fs2RzQfw==",
   "success": true,
   "projectFilePath": "D:\\V 2022\\MobileImage\\MobileImage\\MobileImage.Android\\MobileImage.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xam.plugins.forms.imagecircle\\3.0.0.5\\xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation.experimental\\1.0.0.8\\xamarin.androidx.annotation.experimental.1.0.0.8.nupkg.sha512",

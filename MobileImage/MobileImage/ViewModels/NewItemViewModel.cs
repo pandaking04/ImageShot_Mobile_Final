@@ -11,6 +11,7 @@ namespace MobileImage.ViewModels
     {
         private string text;
         private string description;
+        private string image;
 
         public NewItemViewModel()
         {
@@ -23,7 +24,8 @@ namespace MobileImage.ViewModels
         private bool ValidateSave()
         {
             return !String.IsNullOrWhiteSpace(text)
-                && !String.IsNullOrWhiteSpace(description);
+                && !String.IsNullOrWhiteSpace(description)
+                && !String.IsNullOrWhiteSpace(image);
         }
 
         public string Text
@@ -36,6 +38,12 @@ namespace MobileImage.ViewModels
         {
             get => description;
             set => SetProperty(ref description, value);
+        }
+
+        public string Image
+        {
+            get => image;
+            set => SetProperty(ref image, value);
         }
 
         public Command SaveCommand { get; }
@@ -53,7 +61,9 @@ namespace MobileImage.ViewModels
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = Text,
-                Description = Description
+                Description = Description,
+                Image = Image
+             
             };
 
             await DataStore.AddItemAsync(newItem);

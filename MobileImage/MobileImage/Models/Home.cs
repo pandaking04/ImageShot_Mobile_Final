@@ -10,8 +10,8 @@ namespace MobileImage.Models
         public string Name { get; set; }
         public string Size { get; set; }
         public string Type { get; set; }
-        public string Description { get; set; }
+        public string Desc { get; set; }
         public float Price { get; set; }
-        public Uri Url { get; set; }
+        public Uri url { get; set; }
     }
 }
