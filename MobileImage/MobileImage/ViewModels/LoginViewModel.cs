@@ -7,6 +7,7 @@ using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using MobileImage.Models;
+using MobileImage.APIs;
 
 namespace MobileImage.ViewModels
 { 
@@ -14,7 +15,9 @@ class LoginViewModels : INotifyPropertyChanged
 {
     public Login MyLogin { get; set; }
 
-    public event PropertyChangedEventHandler PropertyChanged;
+        ApiService apiService;
+
+        public event PropertyChangedEventHandler PropertyChanged;
     string result;
     public string Result
     {
@@ -31,11 +34,14 @@ class LoginViewModels : INotifyPropertyChanged
 
     public LoginViewModels()
     {
+        apiService = new ApiService();
         MyLogin = new Login();
-        LoginCommand = new Command(() =>
+        LoginCommand = new Command(async() =>
         {
-            if (MyLogin.Email == "s@s.com" && MyLogin.Password == "1234")
+            var response = await apiService.Login(MyLogin);
+            if (response)
             {
+                Result = "Success";
                 Application.Current.MainPage = new AppShell();
             }
             else
@@ -44,9 +50,9 @@ class LoginViewModels : INotifyPropertyChanged
             }
         });
 
-        RegisterCommand = new Command( () =>
+        RegisterCommand = new Command(async () =>
         {
-            Application.Current.MainPage = new Views.RegisterView();
+           await Application.Current.MainPage.Navigation.PushModalAsync(new Views.RegisterView());
         });
     }
 }

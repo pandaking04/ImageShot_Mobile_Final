@@ -18,18 +18,25 @@
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
-    <FlyoutItem Title="Home" Icon="h.png" >
+    <FlyoutItem Title="หน้าเเรก" Icon="h.png" >
         <ShellContent Route="HomeView" ContentTemplate="{DataTemplate local:HomeView}" />
     </FlyoutItem>
-    <FlyoutItem Title="Browse" Icon="icon_feed.png">
+    <!--<FlyoutItem Title="Browse" Icon="icon_feed.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Profile" Icon="p.png">
         <ShellContent Route="ProfilePage" ContentTemplate="{DataTemplate local:ProfilePage}" />
+    </FlyoutItem>-->
+
+    <FlyoutItem Title="ภาพที่ซื้อเเล้ว" Icon="buy.png">
+        <ShellContent Route="Cart" ContentTemplate="{DataTemplate local:Cart}" />
+    </FlyoutItem>
+    <FlyoutItem Title="ขายภาพ" Icon="sell.png">
+        <ShellContent Route="InsertProductPage" ContentTemplate="{DataTemplate local:InsertProductPage}" />
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
-    <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked" IconImageSource="https://cdn-icons.flaticon.com/png/512/4034/premium/4034229.png?token=exp=1645376346~hmac=288272ef2dec729575ee682ff37b479b">
     </MenuItem>
 
     <!--

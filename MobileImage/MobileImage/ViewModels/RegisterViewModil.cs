@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Text;
 using Xamarin.Forms;
 using MobileImage.Models;
+using MobileImage.APIs;
 
 namespace MobileImage.ViewModels
 {
@@ -13,10 +14,29 @@ namespace MobileImage.ViewModels
         public Register Register { get; set; }
         public Command RegisterCommand { get; }
         public Command BackCommand { get; }
+
+        ApiService apiService;
+
         public RegisterViewModel()
         {
-            BackCommand = new Command( () => {
-                 Application.Current.MainPage = new Views.LoginPage();
+            apiService = new ApiService();
+            Register = new Register();
+
+            BackCommand = new Command(async () => {
+                await Application.Current.MainPage.Navigation.PopModalAsync();
+            });
+
+            RegisterCommand = new Command(async () =>
+            {
+                var response = await apiService.Register(Register);
+                if (response)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Register", "Register Success", "OK");
+                }
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("Register", "Register fail", "OK");
+                }
             });
         }
     }

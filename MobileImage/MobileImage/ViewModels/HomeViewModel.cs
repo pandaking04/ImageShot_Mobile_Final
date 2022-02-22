@@ -5,53 +5,57 @@ using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using MobileImage.Models;
 using MobileImage.Views;
+using System.ComponentModel;
+using MobileImage.APIs;
+using Xamarin.Essentials;
+using System.Windows.Input;
+using System.Linq;
+
 namespace MobileImage.ViewModels
 {
-    class HomeViewModel
+    class HomeViewModel : INotifyPropertyChanged
     {
-        public ObservableCollection<Home> MyListProduct { get; }
+        public event PropertyChangedEventHandler PropertyChanged;
+        public ObservableCollection<Home> MyListProduct
+        {
+            get
+            {
+                return myproducts;
+            }
+            set
+            {
+                myproducts = value;
+                var args = new PropertyChangedEventArgs(nameof(MyListProduct));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+        public ObservableCollection<Home> myproducts;
+        public ObservableCollection<Home> mySearch;
         public Command SelectCommand { get; set; }
         public Home SelectedProduct { get; set; }
         public Command BackCommand { get; }
+        public Command AddCommand { get; set; }
+        public Search sSearch { get; set; }
+        public ICommand SearchCommand { get;}
+
+        ApiService apiService;
+
         public HomeViewModel()
         {
             
-
+            apiService = new ApiService();
             MyListProduct = new ObservableCollection<Home>();
-            MyListProduct.Add(new Home
-            {
-                ID = 1,
-                Name = "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-                Desc = "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-                Price = 100,
-                url = new Uri("https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg")
-            });
+            sSearch = new Search();
 
-            MyListProduct.Add(new Home
-            {
-                ID = 2,
-                Name = "Mens Casual Premium Slim Fit T-Shirts",
-                Desc = "Slim-fitting style, contrast raglan long sleeve, three-button henley placket",
-                Price = 200,
-                url = new Uri("https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg")
-            });
-
-            MyListProduct.Add(new Home
-            {
-                ID = 3,
-                Name = "Mens Cotton Jacket",
-                Desc = "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping",
-                Price = 300,
-                url = new Uri("https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg")
-            });
+            GetProduct();
 
             SelectCommand = new Command(async () =>
 
             {
-                var ttt = new { SelectedProduct, BackCommand = BackCommand };
-                var ProdDetail = new Views.ProductDetailsView
+                var ttt = new { SelectedProduct, BackCommand = BackCommand, AddCommand = AddCommand };
+                var ProdDetail = new ProductDetailsView
                 {
-                    BindingContext = new { SelectedProduct, BackCommand = BackCommand }
+                    BindingContext = ttt
                 };
                 await Application.Current.MainPage.Navigation.PushModalAsync(ProdDetail);
             });
@@ -61,10 +65,35 @@ namespace MobileImage.ViewModels
                 await Application.Current.MainPage.Navigation.PopModalAsync();
             });
 
-            
+            SearchCommand = new Command( () =>
+            {
+                MyListProduct = new ObservableCollection<Home>(mySearch.Where(x => x.Name.ToLower().Contains(sSearch.S.Trim().ToLower()) || x.Type.ToLower().Contains(sSearch.S.Trim().ToLower())));
+            });
+
+            AddCommand = new Command(async () =>
+            {
+                UserCollection Order = new UserCollection();
+                Order.Name = SelectedProduct.Name;
+                Order.picid = SelectedProduct.Pic_ID;
+                Order.Price = SelectedProduct.Price;
+                Order.Desc = SelectedProduct.Desc;
+                Order.Size = SelectedProduct.Size;
+                Order.Type = SelectedProduct.Type;
+                Order.url = SelectedProduct.url;
+                Order.user_email = Preferences.Get("username", "");
+                var response = await apiService.AddOrder(Order);
+                if (response)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Order", "Order added", "OK");
+                }
+            });
 
         }
-
+        async void GetProduct()
+        {
+            MyListProduct = await apiService.GetProducts();
+            mySearch = myproducts;
+        }
 
     }
 

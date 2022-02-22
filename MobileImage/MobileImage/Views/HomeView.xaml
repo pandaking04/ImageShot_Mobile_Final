@@ -11,39 +11,42 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <SearchBar x:Name="Search1" Placeholder="Search" TextChanged="Search1_TextChanged"/>
-            <CollectionView x:Name="Coill" ItemsSource="{Binding MyListProduct}" SelectionMode="Single"
+        <SearchBar x:Name="Search1" Placeholder="Search" SearchCommand="{Binding SearchCommand}" Text="{Binding sSearch.S}"/>
+        <CollectionView  ItemsSource="{Binding MyListProduct}" SelectionMode="Single"
                     SelectedItem="{Binding SelectedProduct}" SelectionChangedCommand="{Binding SelectCommand}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid Padding="10">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="Auto" />
-                            </Grid.ColumnDefinitions>
-                            <Image Grid.RowSpan="2"
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2"
                         Source="{Binding url}"
                         Aspect="AspectFill"
                         HeightRequest="80"
                         WidthRequest="80" />
-                            <Label Grid.Column="1"
+                        <Label Grid.Column="1"
                         Text="{Binding Name}"
                         FontAttributes="Bold" />
-                            <Label Grid.Row="1"
+                        <Label Grid.Row="1" Grid.Column="1"
+                        Text="{Binding Desc}"
+                        FontAttributes="Bold" />
+                        <Label Grid.Row="1"
                         Grid.Column="1"
                         Text="{Binding Price}"
                         FontAttributes="Italic"
                         VerticalOptions="End"
                         TextColor="Red"/>
 
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

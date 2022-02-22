@@ -20,5 +20,7 @@ D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\MobileIma
 D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\RegisterView.xaml.g.cs
 D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\HomeView.xaml.g.cs
 D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\ProductDetailsView.xaml.g.cs
-D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\MobileImage.csproj.AssemblyReference.cache
 D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
+D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\MobileImage.csproj.AssemblyReference.cache
+D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\Cart.xaml.g.cs
+D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\InsertProductPage.xaml.g.cs

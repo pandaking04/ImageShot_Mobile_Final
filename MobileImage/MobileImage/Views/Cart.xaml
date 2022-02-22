@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileImage.Views.Cart"
+             xmlns:local="clr-namespace:MobileImage.ViewModels">
+
+    <ContentPage.BindingContext>
+        <local:CartViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <CollectionView ItemsSource="{Binding Orders}" SelectionMode="Single">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="1"
+                        Text="{Binding user_email}"
+                        FontAttributes="Bold" />
+                            <Label Grid.Column="1"
+                                   Grid.Row="1"
+                        Text="{Binding Name}"
+                        FontAttributes="Bold" />
+                            <Label Grid.Row="2"
+                        Grid.Column="1"
+                        Text="{Binding Price}"
+                        FontAttributes="Italic"
+                        VerticalOptions="End"  />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button Text="Logout" Command="{Binding LogoutCommand}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

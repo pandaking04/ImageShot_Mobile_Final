@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileImage.Views.LoginPage"
              xmlns:local="clr-namespace:MobileImage.ViewModels"
-              NavigationPage.HasNavigationBar="False">
+              NavigationPage.HasNavigationBar="False"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False">
     
     <ContentPage.BindingContext>
         <local:LoginViewModels/>

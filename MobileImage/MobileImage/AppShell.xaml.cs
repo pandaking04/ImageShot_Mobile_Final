@@ -3,11 +3,13 @@ using MobileImage.Views;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
+using MobileImage.APIs;
 
 namespace MobileImage
 {
     public partial class AppShell : Xamarin.Forms.Shell
     {
+
         public AppShell()
         {
             InitializeComponent();
@@ -19,7 +21,11 @@ namespace MobileImage
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("LoginPage");
+
+           
+            await Shell.Current.GoToAsync($"///{nameof(Views.LoginPage)}");
+           
         }
+        
     }
 }

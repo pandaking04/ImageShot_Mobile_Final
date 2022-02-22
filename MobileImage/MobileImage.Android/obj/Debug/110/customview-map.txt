@@ -12,7 +12,9 @@ androidx.coordinatorlayout.widget.CoordinatorLayout;D:\V 2022\MobileImage\Mobile
 attr;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\values\attrs.xml
 background;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
 background;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
+base-config;obj\Debug\110\res\xml\network_security_config.xml
 cache-path;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\45\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+certificates;obj\Debug\110\res\xml\network_security_config.xml
 color;obj\Debug\110\res\values\colors.xml
 com.google.android.material.appbar.AppBarLayout;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\layout\flyoutcontent.xml
 com.google.android.material.appbar.AppBarLayout;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\layout\rootlayout.xml
@@ -22,6 +24,8 @@ com.google.android.material.tabs.TabLayout;D:\V 2022\MobileImage\MobileImage\Mob
 com.google.android.material.tabs.TabLayout;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\layout\rootlayout.xml
 com.google.android.material.tabs.TabLayout;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\layout\tabbar.xml
 declare-styleable;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\values\attrs.xml
+domain;obj\Debug\110\res\xml\network_security_config.xml
+domain-config;obj\Debug\110\res\xml\network_security_config.xml
 external-cache-path;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\45\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\45\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
@@ -29,6 +33,7 @@ foreground;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\layout\bottomtablayout.xml
 item;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\values\styles.xml
 LinearLayout;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\layout\bottomtablayout.xml
+network-security-config;obj\Debug\110\res\xml\network_security_config.xml
 paths;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\45\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\values\attrs.xml
 resources;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\values\strings.xml
@@ -46,5 +51,6 @@ translate;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp
 translate;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\anim\enterfromright.xml
 translate;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\anim\exittoleft.xml
 translate;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\anim\exittoright.xml
+trust-anchors;obj\Debug\110\res\xml\network_security_config.xml
 xamarin.forms.platform.android.appcompat.FormsViewPager;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\layout\rootlayout.xml
 xamarin.forms.platform.android.ShellFlyoutLayout;D:\V 2022\MobileImage\MobileImage\MobileImage.Android\obj\Debug\110\lp\46\jl\res\layout\flyoutcontent.xml

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileImage.Views.InsertProductPage"
+             xmlns:local="clr-namespace:MobileImage.ViewModels">
+
+    <ContentPage.BindingContext>
+        <local:InsertProductViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        
+        <StackLayout BackgroundColor="#e6e6e6">
+            <Grid>
+
+                <StackLayout Padding="0" Margin="2,10,0,0">
+                    
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,0,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="White" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="https://cdn-icons.flaticon.com/png/512/1144/premium/1144709.png?token=exp=1645374754~hmac=ae67d16a07d80292dd618e20eee50303" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Entry Placeholder="ชื่อรูปภาพ" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" Text="{Binding insert.Name}"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,0,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="White" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="https://cdn-icons.flaticon.com/png/512/3615/premium/3615860.png?token=exp=1645374784~hmac=b45efd3decc82767d7a5e7dd2e1291cb" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Entry Placeholder="ขนาดรูปภาพ(px)" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" Text="{Binding insert.Size}"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,0,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="https://cdn-icons.flaticon.com/png/512/2051/premium/2051106.png?token=exp=1645374833~hmac=38ced2568c6d4a775939f0d43b5c39e2" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Picker Title="-----เลือกหมวดหมู่-----" >
+                                <Picker.Items>
+                                    <x:String>ศิลปะ</x:String>
+                                    <x:String>ธรรมชาติ</x:String>
+                                    <x:String>สัตว์</x:String>
+                                    <x:String>วิทยาศาสตร์</x:String>
+                                    <x:String>เทคโนโลยี</x:String>
+                                </Picker.Items>
+                            </Picker>
+                            <!--<Entry Placeholder="หมวดหูม่" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" Text="{Binding insert.Type}"/>-->
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,0,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/3163/3163231.png" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Entry Placeholder="รายละเอียดรูปภาพ" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" Text="{Binding insert.Desc}"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,0,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="https://cdn-icons.flaticon.com/png/512/1533/premium/1533533.png?token=exp=1645374999~hmac=99f6cf03fce94d6827b2c45ef3644ce7" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Entry Placeholder="ราคาที่ต้องการขาย(บาท)" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" Text="{Binding insert.Price}"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Margin="0,0,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="White" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="https://cdn-icons.flaticon.com/png/512/303/premium/303607.png?token=exp=1645375034~hmac=8302352f1a6579c491612446e366fc45" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                            <Editor Placeholder="ภาพ" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Text="{Binding insert.url}"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Button Text="ซื้อ" BackgroundColor="#d73c3c" TextColor="White" CornerRadius="30" Margin="0,15"  Command="{Binding add}"/>
+                    
+                    
+                </StackLayout>
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
