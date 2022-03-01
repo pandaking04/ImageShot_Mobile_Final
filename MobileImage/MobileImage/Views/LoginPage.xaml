@@ -50,10 +50,10 @@
                     <Label TextColor="red" Margin="10,5,0,0" Padding="0" Text="{Binding Result}"></Label>
 
                     <StackLayout  Orientation="Horizontal">
-                        <CheckBox IsChecked="False" Color="#F0AE4B" />
-                        <Label Text="จดจำฉัน" TextColor="DarkGray" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                        <!--<CheckBox IsChecked="False" Color="#F0AE4B" />-->
+                        <!--<Label Text="จดจำฉัน" TextColor="DarkGray" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
 
-                        <Label Text="ลืมรหัสผ่านใช่ไหม?" TextColor="DarkGray" FontAttributes="Bold" HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                        <Label Text="ลืมรหัสผ่านใช่ไหม?" TextColor="DarkGray" FontAttributes="Bold" HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />-->
 
 
                     </StackLayout>

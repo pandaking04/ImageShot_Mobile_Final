@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.Media.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -14,5 +15,6 @@ namespace MobileImage.Models
         public float Price { get; set; }
         public string user_email { get; set; }
         public string url { get; set; }
+        //public MediaFile pic { get; set; }
     }
 }

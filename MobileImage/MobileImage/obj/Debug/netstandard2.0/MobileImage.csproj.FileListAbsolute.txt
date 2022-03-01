@@ -24,3 +24,29 @@ D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\Pro
 D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\MobileImage.csproj.AssemblyReference.cache
 D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\Cart.xaml.g.cs
 D:\V 2022\MobileImage\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\InsertProductPage.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\bin\Debug\netstandard2.0\MobileImage.deps.json
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\bin\Debug\netstandard2.0\MobileImage.dll
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\bin\Debug\netstandard2.0\ref\MobileImage.dll
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\bin\Debug\netstandard2.0\MobileImage.pdb
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\MobileImage.csproj.AssemblyReference.cache
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\MobileImage.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\Cart.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\HomeView.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\InsertProductPage.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\ProductDetailsView.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\Views\RegisterView.xaml.g.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\MobileImage.AssemblyInfoInputs.cache
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\MobileImage.AssemblyInfo.cs
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\MobileImage.csproj.CoreCompileInputs.cache
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\XamlC.stamp
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\MobileImage.dll
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\ref\MobileImage.dll
+C:\ProjectCross\MobileProjectLast\MobileImage\MobileImage\obj\Debug\netstandard2.0\MobileImage.pdb

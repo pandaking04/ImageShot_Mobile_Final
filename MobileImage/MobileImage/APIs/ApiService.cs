@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using Xamarin.Essentials;
+using Plugin.Media.Abstractions;
 
 namespace MobileImage.APIs
 {
@@ -162,9 +163,50 @@ namespace MobileImage.APIs
                 string json = JsonConvert.SerializeObject(Item);
                 StringContent sContent = new StringContent(json, Encoding.UTF8, "application/json");
 
+                /*var cont = new MultipartFormDataContent();
+                cont.Add(sContent);
+                cont.Add(new StreamContent(Item.pic.GetStream()),
+                    "\"file\"",
+                    $"\"{Item.pic.Path}\"");*/
+
                 var response = await client.PostAsync("http://10.0.2.2:62599/api/PicturesAPI", sContent);
                 Console.WriteLine("Result" + response);
                 Console.WriteLine("Content" + sContent);
+
+
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                throw;
+            }
+        }
+
+        public async Task<bool> Addpic(MediaFile Item)
+        {
+            try
+            {
+
+                var cont = new MultipartFormDataContent();
+                
+                cont.Add(new StreamContent(Item.GetStream()),
+                    "\"file\"",
+                    $"\"{Item.Path}\"");
+
+                /*//string json = JsonConvert.SerializeObject(Item);
+                StringContent sContent = new StringContent(Item, Encoding.UTF8, "application/json");*/
+
+                var dict = new Dictionary<string, string>();
+                dict.Add("Content-Type", "application/x-www-form-urlencode");
+                dict.Add("password", Item.ToString());
+
+                //var response = await client.PostAsync("http://10.0.2.2:55215/token", new FormUrlEncodedContent(dict));
+
+
+                var response = await client.PostAsync("http://10.0.2.2:62599/api/addpic", cont);
+                Console.WriteLine("Result" + response);
+                //Console.WriteLine("Content" + sContent);
 
                 return response.IsSuccessStatusCode;
             }

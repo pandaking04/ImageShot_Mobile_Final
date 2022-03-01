@@ -11,42 +11,52 @@
 
     <ContentPage.Content>
         <StackLayout>
-        <SearchBar x:Name="Search1" Placeholder="Search" SearchCommand="{Binding SearchCommand}" Text="{Binding sSearch.S}"/>
-        <CollectionView  ItemsSource="{Binding MyListProduct}" SelectionMode="Single"
+            <!--<Entry x:Name="Search1" Text="{Binding sSearch.S}"/>-->
+            
+                <SearchBar x:Name="Search1" Placeholder="Search"  Text="{Binding sSearch.S}"/>
+            <Button Text="ค้นหา" Command="{Binding SearchCommand}" BorderWidth="1" 
+        BorderColor="Orange" 
+        BackgroundColor="Orange" 
+        BorderRadius="8"
+        TextColor="White"
+                    Margin="7"/>
+
+                <CollectionView  ItemsSource="{Binding MyListProduct}" SelectionMode="Single"
                     SelectedItem="{Binding SelectedProduct}" SelectionChangedCommand="{Binding SelectCommand}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Grid Padding="10">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <Image Grid.RowSpan="2"
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.RowSpan="2"
                         Source="{Binding url}"
                         Aspect="AspectFill"
                         HeightRequest="80"
                         WidthRequest="80" />
-                        <Label Grid.Column="1"
+                                <Label Grid.Column="1"
                         Text="{Binding Name}"
                         FontAttributes="Bold" />
-                        <Label Grid.Row="1" Grid.Column="1"
+                                <Label Grid.Row="1" Grid.Column="1"
                         Text="{Binding Desc}"
                         FontAttributes="Bold" />
-                        <Label Grid.Row="1"
+                                <Label Grid.Row="1"
                         Grid.Column="1"
                         Text="{Binding Price}"
                         FontAttributes="Italic"
                         VerticalOptions="End"
                         TextColor="Red"/>
 
-                    </Grid>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
