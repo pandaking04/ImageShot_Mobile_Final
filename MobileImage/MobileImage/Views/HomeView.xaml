@@ -47,7 +47,8 @@
                         FontAttributes="Bold" />
                                 <Label Grid.Row="1"
                         Grid.Column="1"
-                        Text="{Binding Price}"
+                        Text="{Binding Price}" 
+                                    
                         FontAttributes="Italic"
                         VerticalOptions="End"
                         TextColor="Red"/>

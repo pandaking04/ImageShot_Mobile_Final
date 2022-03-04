@@ -22,10 +22,7 @@
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-
-                            <Label Grid.Column="1"
-                        Text="{Binding user_email}"
-                        FontAttributes="Bold" />
+                            
                             <Label Grid.Column="1"
                                    Grid.Row="1"
                         Text="{Binding Name}"
@@ -39,7 +36,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <Button Text="Logout" Command="{Binding LogoutCommand}"></Button>
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

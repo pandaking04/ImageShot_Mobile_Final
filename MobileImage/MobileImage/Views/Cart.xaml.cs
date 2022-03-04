@@ -16,5 +16,11 @@ namespace MobileImage.Views
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            BindingContext = new ViewModels.CartViewModel();
+
+        }
     }
 }

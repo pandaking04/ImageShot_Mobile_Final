@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjectCross\\MobileProjectLast\\MobileImage\\MobileImage.iOS\\MobileImage.iOS.csproj": {}
+    "C:\\Users\\Lenovo\\source\\repos\\Sell-Picture-Xamarin-Mobile-ImageShot\\MobileImage\\MobileImage.iOS\\MobileImage.iOS.csproj": {}
   },
   "projects": {
-    "C:\\ProjectCross\\MobileProjectLast\\MobileImage\\MobileImage.iOS\\MobileImage.iOS.csproj": {
+    "C:\\Users\\Lenovo\\source\\repos\\Sell-Picture-Xamarin-Mobile-ImageShot\\MobileImage\\MobileImage.iOS\\MobileImage.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjectCross\\MobileProjectLast\\MobileImage\\MobileImage.iOS\\MobileImage.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\Sell-Picture-Xamarin-Mobile-ImageShot\\MobileImage\\MobileImage.iOS\\MobileImage.iOS.csproj",
         "projectName": "MobileImage.iOS",
-        "projectPath": "C:\\ProjectCross\\MobileProjectLast\\MobileImage\\MobileImage.iOS\\MobileImage.iOS.csproj",
-        "packagesPath": "C:\\Users\\66632\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjectCross\\MobileProjectLast\\MobileImage\\MobileImage.iOS\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\source\\repos\\Sell-Picture-Xamarin-Mobile-ImageShot\\MobileImage\\MobileImage.iOS\\MobileImage.iOS.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\source\\repos\\Sell-Picture-Xamarin-Mobile-ImageShot\\MobileImage\\MobileImage.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\66632\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -34,8 +34,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\ProjectCross\\MobileProjectLast\\MobileImage\\MobileImage\\MobileImage.csproj": {
-                "projectPath": "C:\\ProjectCross\\MobileProjectLast\\MobileImage\\MobileImage\\MobileImage.csproj"
+              "C:\\Users\\Lenovo\\source\\repos\\Sell-Picture-Xamarin-Mobile-ImageShot\\MobileImage\\MobileImage\\MobileImage.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\source\\repos\\Sell-Picture-Xamarin-Mobile-ImageShot\\MobileImage\\MobileImage\\MobileImage.csproj"
               }
             }
           }
@@ -67,21 +67,21 @@
         }
       }
     },
-    "C:\\ProjectCross\\MobileProjectLast\\MobileImage\\MobileImage\\MobileImage.csproj": {
+    "C:\\Users\\Lenovo\\source\\repos\\Sell-Picture-Xamarin-Mobile-ImageShot\\MobileImage\\MobileImage\\MobileImage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjectCross\\MobileProjectLast\\MobileImage\\MobileImage\\MobileImage.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\Sell-Picture-Xamarin-Mobile-ImageShot\\MobileImage\\MobileImage\\MobileImage.csproj",
         "projectName": "MobileImage",
-        "projectPath": "C:\\ProjectCross\\MobileProjectLast\\MobileImage\\MobileImage\\MobileImage.csproj",
-        "packagesPath": "C:\\Users\\66632\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjectCross\\MobileProjectLast\\MobileImage\\MobileImage\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\source\\repos\\Sell-Picture-Xamarin-Mobile-ImageShot\\MobileImage\\MobileImage\\MobileImage.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\source\\repos\\Sell-Picture-Xamarin-Mobile-ImageShot\\MobileImage\\MobileImage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\66632\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -146,7 +146,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

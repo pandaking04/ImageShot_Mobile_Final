@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "4mYVr3x6enqvPYI6CK7kUbwD7GyU281nSEnloPJqxRyjnJNV5uZmolRvJju2e7TIjl/Qc+S+W1rG6joFKLS8Nw==",
+  "dgSpecHash": "YRICs9xfgHdnUf23VcBVFnBF9RE6LcRBTVNucYG3DZ9GKo6QWJPoMXCiqNBEuFHDECx85jLZmGx9cLltSjR2Vg==",
   "success": true,
-  "projectFilePath": "C:\\ProjectCross\\MobileProjectLast\\MobileImage\\MobileImage.iOS\\MobileImage.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\Sell-Picture-Xamarin-Mobile-ImageShot\\MobileImage\\MobileImage.iOS\\MobileImage.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\66632\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\66632\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\66632\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
-    "C:\\Users\\66632\\.nuget\\packages\\xam.plugins.forms.imagecircle\\3.0.0.5\\xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\xam.plugins.forms.imagecircle\\3.0.0.5\\xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],

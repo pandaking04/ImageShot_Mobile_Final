@@ -72,6 +72,9 @@ namespace MobileImage.ViewModels
 
             AddCommand = new Command(async () =>
             {
+                bool check = await Application.Current.MainPage.DisplayAlert("Order", "Please transfer" + SelectedProduct.Price + " Bath " + 
+                    "to ImageShot Bank at XXX-XXXX-XXX", "Yes", "No");
+                if(check == true) { 
                 UserCollection Order = new UserCollection();
                 Order.Name = SelectedProduct.Name;
                 Order.picid = SelectedProduct.Pic_ID;
@@ -86,6 +89,7 @@ namespace MobileImage.ViewModels
                 {
                     await Application.Current.MainPage.DisplayAlert("Order", "Order added", "OK");
                 }
+}
             });
 
         }
